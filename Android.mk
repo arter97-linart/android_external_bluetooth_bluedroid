@@ -15,6 +15,8 @@ ifneq ($(call is-board-platform-in-list,msm8960 msm8930 apq8064),true)
  endif
 endif
 
+bdroid_CFLAGS += -Os
+
 include $(call all-subdir-makefiles)
 
 # Cleanup our locals
